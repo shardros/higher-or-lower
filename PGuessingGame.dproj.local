@@ -2,8 +2,11 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2018/05/08 11:44:36.000.299,=\\hr-storage2\Cohort17homeFolder$\es128207\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/05/08 11:45:53.000.487,\\hr-storage2\Cohort17homeFolder$\es128207\Documents\Embarcadero\Studio\Projects\Unit1.dfm=\\hr-storage2\Cohort17homeFolder$\es128207\Documents\_Subjects\Computer Science\Embarcadero\Studio\Assesments\2018.05.08 GuessingGameV2\UInterface.dfm</Transaction>
-    <Transaction>2018/05/08 11:45:53.000.487,\\hr-storage2\Cohort17homeFolder$\es128207\Documents\Embarcadero\Studio\Projects\Unit1.pas=\\hr-storage2\Cohort17homeFolder$\es128207\Documents\_Subjects\Computer Science\Embarcadero\Studio\Assesments\2018.05.08 GuessingGameV2\UInterface.pas</Transaction>
-    <Transaction>2018/05/08 12:21:36.000.173,\\hr-storage2\Cohort17homeFolder$\es128207\Documents\Embarcadero\Studio\Projects\Project1.dproj=\\hr-storage2\Cohort17homeFolder$\es128207\Documents\_Subjects\Computer Science\Embarcadero\Studio\Assesments\2018.05.08 GuessingGameV2\PGuessingGame.dproj</Transaction>
+    <Transaction>2018/05/08 11:45:53.000.487,\\hr-storage2\Cohort17homeFolder$\es128207\Documents\_Subjects\Computer Science\Embarcadero\Studio\Assesments\2018.05.08 GuessingGameV2\UInterface.dfm=\\hr-storage2\Cohort17homeFolder$\es128207\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2018/05/08 11:45:53.000.487,\\hr-storage2\Cohort17homeFolder$\es128207\Documents\_Subjects\Computer Science\Embarcadero\Studio\Assesments\2018.05.08 GuessingGameV2\UInterface.pas=\\hr-storage2\Cohort17homeFolder$\es128207\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/05/08 12:21:36.000.173,\\hr-storage2\Cohort17homeFolder$\es128207\Documents\_Subjects\Computer Science\Embarcadero\Studio\Assesments\2018.05.08 GuessingGameV2\PGuessingGame.dproj=\\hr-storage2\Cohort17homeFolder$\es128207\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/05/12 18:26:18.669,=D:\Documents\My Documents (Edwin)\School-work\HRSFC\Computer Science\Assements\Higher or lower\higher-or-lower\Unit1.pas</Transaction>
+    <Transaction>2018/05/12 18:26:32.657,D:\Documents\My Documents (Edwin)\School-work\HRSFC\Computer Science\Assements\Higher or lower\higher-or-lower\UHigherLowerMouseGame.dfm=D:\Documents\My Documents (Edwin)\School-work\HRSFC\Computer Science\Assements\Higher or lower\higher-or-lower\Unit1.dfm</Transaction>
+    <Transaction>2018/05/12 18:26:32.657,D:\Documents\My Documents (Edwin)\School-work\HRSFC\Computer Science\Assements\Higher or lower\higher-or-lower\UHigherLowerMouseGame.pas=D:\Documents\My Documents (Edwin)\School-work\HRSFC\Computer Science\Assements\Higher or lower\higher-or-lower\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

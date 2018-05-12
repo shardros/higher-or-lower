@@ -83,7 +83,6 @@ object UI: TUI
       'Computer'
       'Human')
     TabOrder = 2
-    OnClick = ModeSelectorClick
   end
   object History: TListBox
     Left = 16

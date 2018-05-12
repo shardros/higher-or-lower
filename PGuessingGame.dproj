@@ -94,6 +94,10 @@
         <DCCReference Include="UInterface.pas">
             <Form>UI</Form>
         </DCCReference>
+        <DCCReference Include="UHigherLowerMouseGame.pas">
+            <Form>MouseGame</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

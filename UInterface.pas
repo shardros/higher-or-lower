@@ -25,13 +25,14 @@ type
     procedure GuessButtonClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure UsersGuessKeyPress(Sender: TObject; var Key: Char);
-    procedure ModeSelectorClick(Sender: TObject);
+
 
   private
     ActualNumber: integer;
     RemainingGuesses: integer;
     procedure ProcessUserGuess;
     procedure RemoveGuess;
+    procedure EndGame;
   public
     procedure NewGame;
   end;
@@ -42,6 +43,12 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TUI.EndGame;
+begin
+  showmessage('Well done! You guessed it right; starting a new game...');
+  NewGame;
+end;
 
 procedure TUI.FormCreate(Sender: TObject);
 begin
@@ -56,7 +63,8 @@ end;
 
 procedure TUI.NewGame;
 {
-  Resets all the parmeters to how they should be a the start of a game
+  Resets all the parmeters to how they should be a the start
+  of a game
 }
 begin
   ActualNumber := random(100);
@@ -96,8 +104,10 @@ begin
         History.Items.Add(str(guess) + ' - Too Low');
         RemoveGuess;
       end
-      else
-        History.Items.Add('You got it right!');
+      else begin
+        History.Items.Add(str(guess) + ' - You got it right!');
+        EndGame;
+      end;
     end;
     UsersGuess.Text := '';
   end;
@@ -117,6 +127,8 @@ begin
   begin
     GuessButton.Enabled := False;
     UsersGuess.Enabled := False;
+    showmessage('You ran out of guesses D: Starting new game...');
+    NewGame;
   end;
 end;
 
