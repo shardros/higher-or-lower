@@ -17,8 +17,6 @@ type
     MainMenu1: TMainMenu;
     test1: TMenuItem;
     test2: TMenuItem;
-    test3: TMenuItem;
-    testes1: TMenuItem;
     guessInstruction: TLabel;
     log: TListBox;
     SelectorHuman: TCheckBox;
@@ -29,6 +27,8 @@ type
     procedure SelectorHumanClick(Sender: TObject);
     procedure SelectorComputerClick(Sender: TObject);
     procedure GuessButtonClick(Sender: TObject);
+    procedure test2Click(Sender: TObject);
+    procedure testes1Click(Sender: TObject);
   private
     ActualNumber: integer;
     RemainingGuesses: integer;
@@ -51,9 +51,9 @@ implementation
 
 function TUI.manualGuessing: boolean;
 begin
-  if SelectorHuman.Checked xor SelectorComputer.Checked then
-    result := SelectorHuman.Checked;
-
+  if not(SelectorHuman.Checked xor SelectorComputer.Checked) then
+    SelectorHuman.Checked := True;
+  result := SelectorHuman.Checked;
 end;
 
 {
@@ -103,6 +103,11 @@ begin
       SelectorHuman.Checked := True;
     end;
   end;
+end;
+
+procedure TUI.test2Click(Sender: TObject);
+begin
+  NewGame;
 end;
 
 procedure TUI.EndGame;
@@ -174,13 +179,18 @@ begin
     Guess := 50;
     Actual := int(UsersGuess.Text);
     repeat
-      log.Items.Add('The computer is guessing: ' + str(Guess));
+      log.Items.Add('The computer is guessing: ');
+      log.Items.Add(str(guess));
       higherOrLower := int(processGuess(Guess, Actual));
-      newGuess := abs(Guess - oldGuess) * higherOrLower + Guess;
+      newGuess := Round((abs(Guess - oldGuess) * (-higherOrLower))/2) + Guess;
       { This works out the next number in the binnary search }
+      if newguess = guess then inc(newguess);
+      //Prevent the computer guessing the same number twice due to rounding
+      //Alternative could be to use celling
       oldGuess := Guess;
       Guess := newGuess;
     until (higherOrLower = 0);
+    log.Items.Add('THE COMPUTER HAS GUESSED RIGHT');
   end;
 end;
 
@@ -270,7 +280,7 @@ begin
   end
   else
   begin
-    if not(Key in [#8, '0' .. '9']) then // #8 Delete
+    if not(Key in [#8, '0' .. '9']) or (length(UsersGuess.Text) > 8) then // #8 Delete and prevent the user entering non valid integer values
       Key := #0; // #0 is null
   end;
 end;

@@ -109,18 +109,13 @@ object UI: TUI
     OnClick = SelectorComputerClick
   end
   object MainMenu1: TMainMenu
-    Left = 448
-    Top = 16
+    Left = 416
+    Top = 48
     object test1: TMenuItem
       Caption = 'Menu'
       object test2: TMenuItem
         Caption = 'New Game'
-      end
-      object test3: TMenuItem
-        Caption = 'Save Game'
-      end
-      object testes1: TMenuItem
-        Caption = 'Save Game As'
+        OnClick = test2Click
       end
     end
   end

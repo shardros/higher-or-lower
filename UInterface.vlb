@@ -4,23 +4,17 @@ Coordinates=305,251,88,36
 [PastGuesses]
 Coordinates=10,144,91,58
 
-[testes1]
-Coordinates=12,173,56,36
-
 [test1]
 Coordinates=394,166,43,36
 
 [MainMenu1]
 Coordinates=394,221,81,36
 
-[test3]
-Coordinates=157,251,43,36
-
 [test2]
 Coordinates=108,251,43,36
 
 []
-Coordinates=180,10,49,58
+Coordinates=12,173,56,36
 Visible=True
 
 [GuessButton]
