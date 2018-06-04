@@ -3,8 +3,8 @@ object UI: TUI
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'UI'
-  ClientHeight = 313
-  ClientWidth = 453
+  ClientHeight = 316
+  ClientWidth = 454
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -43,19 +43,26 @@ object UI: TUI
     Font.Style = []
     ParentFont = False
   end
-  object Label1: TLabel
+  object guessInstruction: TLabel
     Left = 256
     Top = 168
-    Width = 87
+    Width = 79
     Height = 13
-    Caption = 'Enter Your Guess:'
+    Caption = 'Enter a Number:'
+  end
+  object Label2: TLabel
+    Left = 256
+    Top = 53
+    Width = 39
+    Height = 13
+    Caption = 'Guesser'
   end
   object GuessButton: TButton
     Left = 248
     Top = 227
     Width = 185
     Height = 69
-    Caption = 'Guess!'
+    Caption = 'Ok'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -27
@@ -73,24 +80,33 @@ object UI: TUI
     TabOrder = 1
     OnKeyPress = UsersGuessKeyPress
   end
-  object ModeSelector: TRadioGroup
-    Left = 248
-    Top = 33
-    Width = 185
-    Height = 112
-    Caption = 'ModeSelector'
-    Items.Strings = (
-      'Computer'
-      'Human')
-    TabOrder = 2
-  end
-  object History: TListBox
+  object log: TListBox
     Left = 16
     Top = 33
     Width = 201
     Height = 263
     ItemHeight = 13
+    TabOrder = 2
+  end
+  object SelectorHuman: TCheckBox
+    Left = 256
+    Top = 80
+    Width = 97
+    Height = 17
+    Caption = 'Human'
+    Checked = True
+    State = cbChecked
     TabOrder = 3
+    OnClick = SelectorHumanClick
+  end
+  object SelectorComputer: TCheckBox
+    Left = 256
+    Top = 120
+    Width = 97
+    Height = 17
+    Caption = 'Computer'
+    TabOrder = 4
+    OnClick = SelectorComputerClick
   end
   object MainMenu1: TMainMenu
     Left = 448
